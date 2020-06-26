@@ -5,10 +5,8 @@
     <form action="/search/results" method="post">
         <h2>Search by:</h2>
 
-        <p>
-
-            @if (ViewBag.columns != null)
-            {
+        <p>           
+            
                 @foreach (var column in ViewBag.columns)
                 {
                     <span>
@@ -16,7 +14,7 @@
                         <label for="@column.Key">@column.Value</label>
                     </span>
                 }
-            }
+            
 
 
         </p>
@@ -63,7 +61,7 @@
                 </tr>
                 <tr>
                     <th>Location</th>
-                    <td>@results.Employer</td>
+                    <td>@results.Location</td>
                 </tr>
                 <tr>
                     <th>Position Type</th>

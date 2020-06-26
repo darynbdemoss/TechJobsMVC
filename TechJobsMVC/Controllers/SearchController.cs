@@ -37,6 +37,7 @@ namespace TechJobsMVC.Controllers
                 
             }
 
+            ViewBag.columns = ListController.ColumnChoices;
             ViewBag.result = result;
             return View("Index");
         }
